@@ -1,0 +1,346 @@
+.address-info {
+    margin: 10px 8px 10px 6px;
+    height: 300px;
+
+    &__photo-container {
+        width: 30%;
+        height: 200px;
+        margin-right: 2%;
+    }
+
+    &__photo-config {
+        width: 100%;
+        height: 180px;
+    }
+
+    &__details {
+        width: 40%;
+        height: 200;
+    }
+
+    &__map {
+        width: 500px;
+        height: 180px;
+    }
+
+    &__map-container {
+        width: 30%;
+        height: 200px;
+    }
+
+    &__edit {
+        margin-top: 2%;
+    }
+
+    &__subtitle{
+        color:rgb(151, 146, 146)
+    }
+}
+
+.address {
+    width: 96%;
+    height: 280px;
+}
+
+mat-card {
+    padding: 2px 2px 2px 2px;
+    margin: 1% 2%;
+}
+
+.zone-schedule {
+    width: 100%;
+    height: 450px;
+ 
+    &__selected-content {
+        width: 350px;
+        height: 360px;
+    }
+
+    &__selected-card {
+        outline: 1px solid olive;
+        margin: 4px;
+       // background-color: lightblue;
+    }
+
+    &__selected {
+        width: 400px;
+        height: 300px;
+    }
+
+    &__normal-card {       
+        box-shadow: none;
+        margin: 4px;
+        outline: 1px solid rgb(225, 229, 230);
+    }
+
+    &__add-card {
+        outline: 1px dashed grey;
+        box-shadow: none;
+        margin: 4px;
+    }
+
+    &__add-content {
+        width: 350px;
+        height: 360px;
+    }
+
+    &__title{
+        height: 50px;
+    }
+
+    &__main-card{
+        height: 435px;
+        padding: 0px 8px 0px 8px;
+    }
+
+    // &__content{
+    //     background:rgb(127, 144, 42)
+    // }    
+}
+
+.width-100 {
+    width: 100%;
+}
+
+// .zone-schedule-card{
+//     width: 100%;
+//     height: 330px;
+// }
+
+.p-20 {
+    padding: 20px;
+}
+
+.color-olive {
+    color: olive;
+}
+
+.truck-storage {
+    height: 400px;
+}
+
+.truck-info {
+    &__normal {
+        height: 120px;
+        width: 100%;
+        outline: 1px solid rgb(225, 229, 230);
+    }
+
+    &__add {
+        height: 120px;
+        width: 100%;
+        outline: 1px dashed rgb(127, 144, 42);
+    }
+
+    &__selected {
+        height: 120px;
+        width: 100%;
+        outline: 1px solid olive;
+    }
+
+    &__content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    &__title{
+        height: 50px;
+    }
+
+}
+
+.fa-truck {
+    &_sm {
+        font-size: 15px;
+    }
+
+    &_md {
+        font-size: 20px;
+    }
+
+    &_lg {
+        font-size: 25px;
+    }
+
+    &_color-olive {
+        color: olive;
+    }
+
+    &_color-normal {
+        color: grey;
+    }
+}
+
+.fa-circle-plus {
+    &_sm{
+        font-size: 15px;
+    }
+    &_md {
+        font-size: 20px;
+    }
+
+    &_color-olive {
+        color: olive;
+    }
+}
+
+.mat-subheading-1 {
+    &_bold {
+        font-weight: 600;
+    }
+}
+
+.storage-info {
+    &__normal {
+        height: 120px;
+        width: 100%;
+        outline: 1px solid rgb(225, 229, 230);
+    }
+
+    &__add {
+        height: 120px;
+        width: 100%;
+        outline: 1px dashed rgb(127, 144, 42);
+    }
+
+    &__selected {
+        height: 120px;
+        width: 100%;
+        outline: 1px solid olive;
+    }
+
+    &__content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    &__message {
+        height: 120px;
+        width: 100%;
+    }
+
+    &__title{
+        height: 50px;
+    }
+}
+
+.mat-subheading-2 {
+    &_font-message {
+        color: rgb(176, 175, 172)
+    }
+}
+
+.document {
+    &__info {
+        height: 200px;
+        width: 100%;
+    }
+
+    &__item {
+        margin-left: 20px;
+    }
+
+    &__link {
+        color: rgb(14, 14, 14);
+    }
+
+    &__text-olive {
+        color: olive;
+    }
+
+    &__title{
+        height: 50px;
+    }
+
+    &__item-add{
+        margin-left: 20px;
+        font-weight: bold;
+        color: olive;
+    }
+}
+
+.fa-file {
+    &_document {
+        color: rgb(151, 146, 146);
+        font-size: 15px;
+    }
+
+}
+
+.photo {
+    &__container {
+        height: 200px;
+        width: 100%;
+    }
+
+    &__img-config {
+        width: 100px;
+        height: 80px;
+    }
+
+    &__card {
+        width: 100px;
+        height: 80px;
+        margin: 0;
+    }
+
+    &__add {
+        width: 100px;
+        height: 80px;
+    }
+
+    &__title{
+        height: 50px;
+    }
+
+}
+
+.responsible-person {
+    &__container {
+        height: 150px;
+        width: 100%;
+    }
+
+    &__card {
+        width: 20%;
+        height: 80px;
+        outline: 1px solid rgb(225, 229, 230);
+    }
+
+    &__img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }   
+
+    &__title{
+        width: 100%;
+        height: 50px;
+    }
+}
+
+.fa-pen {
+    &_md {
+        font-size: 20px;
+    }
+
+    &_color-olive {
+        color: olive
+    }
+}
+
+.width-96{
+    width: 96%
+}
+
+.mat-subtitle-1{
+    &_bold{
+        font-weight: 600;
+    }
+    &_light{
+        color: grey;
+    }
+}
+
+
+    

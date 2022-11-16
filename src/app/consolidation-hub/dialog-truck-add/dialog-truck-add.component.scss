@@ -1,0 +1,25 @@
+.width-100 {
+    width: 100%;
+}
+
+.fa-truck {
+    &_sm {
+        font-size: 15px;
+    }
+
+    &_md {
+        font-size: 20px;
+    }
+
+    &_lg {
+        font-size: 25px;
+    }
+
+    &_color-olive {
+        color: olive;
+    }
+
+    &_color-normal {
+        color: grey;
+    }
+}
