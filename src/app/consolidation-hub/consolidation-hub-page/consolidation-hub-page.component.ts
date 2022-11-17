@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { Subscription } from 'rxjs';
 import { DialogTruckAddComponent } from '../dialog-truck-add/dialog-truck-add.component';
+import { ConsolidationHubService } from '../services/consolidation-hub.service';
 
 @Component({
   selector: 'app-consolidation-hub-page',
@@ -9,7 +11,8 @@ import { DialogTruckAddComponent } from '../dialog-truck-add/dialog-truck-add.co
 })
 export class ConsolidationHubPageComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  confirmationOfTruck$!: Subscription;
+  constructor(public dialog: MatDialog, private consolidationHubService: ConsolidationHubService) { }
 
   ngOnInit(): void {
   }
@@ -19,7 +22,8 @@ export class ConsolidationHubPageComponent implements OnInit {
       name: "Truck 01",
       quantity: "08",
       cardClasses: {
-        "truck-info__normal": true
+        "truck-info__normal": true,
+        "p-24": true
       },
       iconClasses: {
         "fa-solid": true,
@@ -33,7 +37,8 @@ export class ConsolidationHubPageComponent implements OnInit {
       name: "Truck 02",
       quantity: 12,
       cardClasses: {
-        "truck-info__selected": true
+        "truck-info__selected": true,
+        "p-24": true
       },
       iconClasses: {
         "fa-solid": true,
@@ -47,7 +52,8 @@ export class ConsolidationHubPageComponent implements OnInit {
       name: "Truck 03",
       quantity: 16,
       cardClasses: {
-        "truck-info__normal": true
+        "truck-info__normal": true,
+        "p-24": true
       },
       iconClasses: {
         "fa-solid": true,
@@ -65,7 +71,8 @@ export class ConsolidationHubPageComponent implements OnInit {
         name: "Truck 0" + (this.trucks.length + 1),
         quantity: "12",
         cardClasses: {
-          "truck-info__normal": true
+          "truck-info__normal": true,
+          "p-24": true
         },
         iconClasses: {
           "fa-solid": true,
@@ -81,6 +88,15 @@ export class ConsolidationHubPageComponent implements OnInit {
 
   openDialog(): void {
     this.dialog.open(DialogTruckAddComponent, { width: '500px' });
+  }
+
+  getTruckConfirmation() {
+    this.confirmationOfTruck$ = this.consolidationHubService.getConfirmationOfAddingTruck()
+                                .subscribe((res:boolean)=>{
+                                  if(res){
+                                    this.addTrucks();
+                                  }
+                                })
   }
 
 }

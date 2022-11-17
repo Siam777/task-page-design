@@ -1,52 +1,55 @@
 <div class="width-100">
     <div fxFlex="column" fxLayoutAlign="start start">
-        <mat-card class="address">
-            <mat-card-content fxLayout="row" fxLayoutAlign="start" class="address-info">
-                <div fxLayout="row" fxFlex="97" fxLayoutAlign="space-between center">
-                    <div class="address-info__photo-container">
-                        <img class="address-info__photo-config" src="assets/images/selise-image.jpg">
+        <div class="address p-24" fxFlex="100">
+            <div fxLayout="column" class="address-info">
+                <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="24px">
+                    <div fxLayout="row" fxFlex="60" fxLayoutAlign="start center" fxLayoutGap="24px">
+                        <div class="address-info__photo-container" fxFlex="400px">
+                            <img class="address-info__photo-config" src="assets/images/selise-image.jpg">
+                        </div>
+                        <div fxLayout="column" class="address-info__details" fxFlex>
+                            <span class="mat-headline mt-10">
+                                BG Ingenieurs Conseils AG
+                            </span>
+                            <span class="address-info__subtitle">
+                                <i class="fa-sharp fa-solid fa-location-dot"></i> <span class="ml-8 body-1">Winterfeldweg
+                                    52,
+                                    3018 BernSwitzerland</span>
+                            </span>
+                            <span class="mt-10 address-info__subtitle">
+                                <i class="fa-regular fa-calendar-minus"></i> <span
+                                    class="ml-8 body-1">29.06.2021-29.06.2022</span>
+                            </span>
+                        </div>
                     </div>
-                    <div fxLayout="column" class="address-info__details">
-                        <span class="mat-headline mt-10">
-                            BG Ingenieurs Conseils AG
-                        </span>
-                        <span class="address-info__subtitle">
-                            <i class="fa-sharp fa-solid fa-location-dot"></i> <span class="ml-8 body-1">Winterfeldweg
-                                52,
-                                3018 BernSwitzerland</span>
-                        </span>
-                        <span class="mt-10 address-info__subtitle">
-                            <i class="fa-regular fa-calendar-minus"></i> <span
-                                class="ml-8 body-1">29.06.2021-29.06.2022</span>
-                        </span>
+                    <div fxFlex="40" fxLayoutAlign="end">
+                        <div class="address-info__map-container" fxFlex="450px" style="height: 240px;overflow: hidden;">
+                            <img class="address-info__map" src="assets/images/selise-address-map.png">
+                        </div>
                     </div>
-                    <div class="address-info__map-container">
-                        <img class="address-info__map" src="assets/images/selise-address-map.png">
-                    </div>
+                                  
                 </div>
-                <div fxlex="3" fxLayoutAlign="start" class="address-info__edit">
-                    <i class="fa-solid fa-pen fa-pen_md fa-pen_color-olive"></i>
-                </div>
-            </mat-card-content>
+               
+            </div>
 
-        </mat-card>
+        </div>
     </div>
 
 </div>
 <div class="width-100">
     <div fxLayout="row">
-        <div class="zone-schedule">
-            <mat-card class="zone-schedule__main-card">
-                <mat-card-header class="zone-schedule__title" fxLayoutAlign="start center">
-                    <mat-card-title class="py-6">Unloading Zone Scheduling </mat-card-title>
-                </mat-card-header>
-                <div fxLayout="row" fxLayoutAlign="start start">
-                    <mat-card class="zone-schedule__selected-card">
+        <div class="zone-schedule" fxFlex="100">
+            <div class="zone-schedule__main-card p-24">
+                <div class="zone-schedule__title" fxLayoutAlign="start center">
+                    <span class="mat-title">Unloading Zone Scheduling </span>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="start stretch" fxLayoutGap="20">
+                    <div class="zone-schedule__selected-card" fxFlex="22">
                         <div>
                             <div fxLayout="row" class="zone-schedule__selected-content p-20"
                                 fxLayoutAlign="space-between start">
 
-                                <div fxLayout="column" class="width-100">
+                                <div fxLayout="column" fxFlex="100">
                                     <div fxLayout="column">
                                         <span class="mat-title color-olive">Crane 2 - 18 mt</span>
                                         <span class="mat-subheading-2 mt-10"><i class="fa-regular fa-clock"></i> <span
@@ -56,7 +59,7 @@
                                                 class="ml-10 body-1">20.02.2021 - 30.06.2023</span>
                                         </span>
                                     </div>
-                                    <div>
+                                    <div fxFlex="100">
                                         <div fxLayout="row" fxLayoutAlign="space-between center" class="mt-20">
                                             <span>Monday</span>
                                             <span>7:00-12:00 | 13:00-17:00</span>
@@ -80,15 +83,15 @@
                                     </div>
 
                                 </div>
-                                <div>
+                                <!-- <div>
                                     <i class="fa-solid fa-pen fa-pen_color-olive"></i>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
-                    </mat-card>
+                    </div>
 
-                    <mat-card class="zone-schedule__normal-card">
+                    <div class="zone-schedule__normal-card"  fxFlex="20">
                         <div fxLayout="row" class="zone-schedule__selected-content p-20"
                             fxLayoutAlign="space-between start">
 
@@ -120,35 +123,35 @@
                                 </div>
                             </div>
                         </div>
-                    </mat-card>
+                    </div>
 
-                    <mat-card class="zone-schedule__add-card">
-                        <div fxLayout="row" class="zone-schedule__add-content p-20" fxLayoutAlign="center center">
+                    <div class="zone-schedule__add-card" fxFlex="20"  fxLayoutAlign="center center">
+                        <div fxLayout="row" class="zone-schedule__add-content p-20">
                             <span class="color-olive mat-title">
                                 <i class="fa-solid fa-circle-plus"></i> ADD NEW
                             </span>
                         </div>
-                    </mat-card>
+                    </div>
                 </div>
-            </mat-card>
+            </div>
         </div>
 
     </div>
 </div>
 
 <div class="width-100 mt-20">
-    <div fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="2px">
-        <mat-card class="truck-info" fxFlex="47">
-            <mat-card-header class="truck-info__title" fxLayoutAlign="space-between center">
-                <mat-card-title class="py-6">Truck Information</mat-card-title>
+    <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxLayoutGap="2px">
+        <div class="truck-info p-24" fxFlex="47">
+            <div class="truck-info__title" fxLayoutAlign="space-between center">
+                <span class="mat-title">Truck Information</span>
                 <mat-icon class="color-olive">more_vert</mat-icon>
-            </mat-card-header>
-            <div fxLayout="row wrap">
+            </div>
+            <div fxLayout="row wrap" fxLayoutGap="20px">
                 <ng-container *ngFor="let truck of trucks">
-                    <mat-card [ngClass]="truck.cardClasses" fxFlex="20">
-                        <mat-card-header *ngIf="truck.isSelected" fxLayoutAlign="end">
+                    <div [ngClass]="truck.cardClasses" fxFlex="20">
+                        <span *ngIf="truck.isSelected" fxLayoutAlign="end">
                             <i class="fa-solid fa-pen fa-pen_color-olive ml-8"></i>
-                        </mat-card-header>
+                        </span>
                         <div fxLayout="column" class="truck-info__content" fxLayoutAlign="space-between center"
                             [fxLayoutGap]="truck.isSelected?'10px':'20px'">
                             <i [ngClass]="truck.iconClasses"></i>
@@ -156,83 +159,41 @@
                             <span
                                 class="mat-subtitle-1 mat-subtitle-1_bold mat-subtitle-1_light">{{truck.quantity}}</span>
                         </div>
-                    </mat-card>
+                    </div>
                 </ng-container>
-                <mat-card class="truck-info__add" fxFlex="20">
-                    <div fxLayout="column" class="truck-info__content" fxLayoutAlign="space-between center"
-                        fxLayoutGap="15px">
-                        <span></span>
-                      
+                <div class="truck-info__add" fxFlex="20" fxLayoutAlign="center">
+                    <div fxLayout="column" class="truck-info__content" fxLayoutAlign="center center"
+                        fxLayoutGap="15px">                                             
                             <i class="fa-solid fa-circle-plus fa-circle-plus_md fa-circle-plus_color-olive" style="display: block;" (click)="openDialog()"></i>
-                            <span class="mat-subheading-1 mat-subheading-1_bold color-olive" style="display: block;">ADD NEW</span>
-                       
-
+                            <span class="mat-subheading-1 mat-subheading-1_bold color-olive" style="display: block;" (click)="addTrucks()">ADD NEW</span>                
                     </div>
-                </mat-card>
-                <!-- <mat-card class="truck-info__normal" fxFlex="22">
-                    <div fxLayout="column" class="truck-info__content" fxLayoutAlign="space-between center"
-                        fxLayoutGap="20px">
-                        <i class="fa-solid fa-truck fa-truck_sm fa-truck_color-normal"></i>
-                        <span class="body-1">Truck 01</span>
-                        <span class="mat-subtitle-1 mat-subtitle-1_bold mat-subtitle-1_light">08</span>
-                    </div>
-                </mat-card>
-                <mat-card class="truck-info__selected" fxFlex="22">
-                    <mat-card-header fxLayoutAlign="end">
-                        <i class="fa-solid fa-pen fa-pen_color-olive ml-8"></i>
-                    </mat-card-header>
-                    <div fxLayout="column" class="truck-info__content" fxLayoutAlign="space-between center"
-                        fxLayoutGap="10px">
-                        <div fxLayout="row">
-                            <i class="fa-solid fa-truck fa-truck_md fa-truck_color-olive"></i>                            
-                        </div>
-                       
-                        <span class="body-1">Truck 02</span>
-                        <span class="mat-subtitle-1 mat-subtitle-1_bold mat-subtitle-1_light">12</span>
-                    </div>
-                </mat-card>
-                <mat-card class="truck-info__normal" fxFlex="22">                   
-                    <div fxLayout="column" class="truck-info__content" fxLayoutAlign="space-between center"
-                        fxLayoutGap="20px">
-                        <i class="fa-solid fa-truck fa-truck_lg fa-truck_color-normal"></i>
-                        <span class="body-1">Truck 03</span>
-                        <span class="mat-subtitle-1 mat-subtitle-1_bold mat-subtitle-1_light">16</span>
-                    </div>
-                </mat-card>
-                <mat-card class="truck-info__add" fxFlex="22">
-                    <div fxLayout="column" class="truck-info__content" fxLayoutAlign="space-between center"
-                        fxLayoutGap="15px">
-                        <span></span>
-                        <i class="fa-solid fa-circle-plus fa-circle-plus_md fa-circle-plus_color-olive"></i>
-                        <span class="mat-subheading-1 mat-subheading-1_bold color-olive">ADD NEW</span>
-                    </div>
-                </mat-card> -->
+                </div>               
             </div>
-        </mat-card>
-        <mat-card class="storage-info" fxFlex="47">
-            <mat-card-header class="storage-info__title" fxLayoutAlign="space-between center">
-                <mat-card-title class="py-6">Storage Information</mat-card-title>
+        </div>
+        <div class="storage-info p-24" fxFlex="47">
+            <div class="storage-info__title" fxLayoutAlign="space-between center">
+                <span class="mat-title">Storage Information</span>
                 <mat-icon class="color-olive">more_vert</mat-icon>
-            </mat-card-header>
-            <div fxLayout="row">
-                <mat-card class="storage-info__add" fxFlex="22">
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="stretch" fxLayoutGap="15">
+                <div class="storage-info__add" fxFlex="22">
                     <div fxLayout="column" class="truck-info__content" fxLayoutAlign="space-between center"
                         fxLayoutGap="15px">
                         <span></span>
                         <i class="fa-solid fa-circle-plus fa-circle-plus_md fa-circle-plus_color-olive"></i>
                         <span class="mat-subheading-1 mat-subheading-1_bold color-olive">ADD NEW</span>
                     </div>
-                </mat-card>
+                </div>
                 <div class="storage-info__message" fxLayout="column" fxLayoutAlign="center start">
                     <span class="mat-subheading-2 mat-subheading-2_font-message">Storage information is not added
                         yet!</span>
                 </div>
             </div>
-        </mat-card>
-        <mat-card class="document" fxFlex="47">
-            <mat-card-header class="document__title" fxLayoutAlign="start center">
-                <mat-card-title class="py-6">Documents</mat-card-title>
-            </mat-card-header>
+        </div>
+        <div class="document p-24" fxFlex="47">
+            <div class="document__title" fxLayoutAlign="start center">
+                <span class="mat-title">Documents</span>
+            </div>
             <div fxLayout="row">
                 <div fxLayout="column" class="document__info" fxLayoutAlign="start" fxLayoutGap="10px">
                     <span class="document__item"><i class="fa-solid fa-file fa-file_document"></i>
@@ -257,39 +218,38 @@
                     </span>
                 </div>
             </div>
-
-
-        </mat-card>
-        <mat-card class="photo" fxFlex="47">
-            <mat-card-header class="photo__title" fxLayoutAlign="start center">
-                <mat-card-title class="py-6">Photos</mat-card-title>
-            </mat-card-header>
-            <div fxLayout="row" class="photo__container" fxLayoutAlign="start start">
-                <mat-card class="photo__card">
-                    <img class="photo__img-config" src="assets/images/crane-1.jpg">
-                </mat-card>
-                <mat-card class="photo__card">
-                    <img class="photo__img-config" src="assets/images/crane-2.jpg">
-                </mat-card>
-                <mat-card class="photo__card">
-                    <img class="photo__img-config" src="assets/images/crane-3.jpg">
-                </mat-card>
-                <mat-card class="photo__card">
+        </div>
+        
+        <div class="photo p-24" fxFlex="47">
+            <div class="photo__title" fxLayoutAlign="start center">
+                <span class="mat-title">Photos</span>
+            </div>
+            <div fxLayout="row wrap" class="photo__container" fxLayoutAlign="start stretch" fxLayoutGap="10">
+                <div class="photo__card" fxFlex="15">
+                    <img class="photo__img-config" fxFlex="100" src="assets/images/crane-1.jpg">
+                </div>
+                <div class="photo__card" fxFlex="15">
+                    <img class="photo__img-config" fxFlex="100" src="assets/images/crane-2.jpg">
+                </div>
+                <div class="photo__card" fxFlex="15">
+                    <img class="photo__img-config" fxFlex="100" src="assets/images/crane-3.jpg">
+                </div>
+                <div class="photo__card-add" fxFlex="15" fxLayoutAlign="center">
                     <div fxLayout="column" fxLayoutAlign="center center" class="photo__add">
                         <span class="color-olive body-1">
                             <i class="fa-solid fa-circle-plus fa-circle-plus_md"></i>
                         </span>
                     </div>
-
-                </mat-card>
+                </div>
             </div>
-        </mat-card>
-        <mat-card fxFlex="96" class="responsible-person">
-            <mat-card-header class="responsible-person__title" fxLayoutAlign="start center">
-                <mat-card-title class="py-6">Responsible Person</mat-card-title>
-            </mat-card-header>
-            <div fxLayout="row" class="responsible-person__container" fxLayoutAlign="start start">
-                <mat-card class="responsible-person__card">
+        </div>
+
+        <div fxFlex="96" class="responsible-person p-24">
+            <div class="responsible-person__title" fxLayoutAlign="start center">
+                <span class="mat-title">Responsible Person</span>
+            </div>
+            <div fxLayout="row wrap" class="responsible-person__container" fxLayoutAlign="start start" fxLayoutGap="20px">
+                <div class="responsible-person__card">
                     <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="10px">
                         <img class="responsible-person__img" src="assets/images/person.png">
                         <div fxLayout="column" fxLayoutGap="2px">
@@ -298,9 +258,9 @@
                             <span class="body-1">max.musterman@sample.com</span>
                         </div>
                     </div>
-                </mat-card>
+                </div>
 
-                <mat-card class="responsible-person__card">
+                <div class="responsible-person__card">
                     <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="10px">
                         <img class="responsible-person__img" src="assets/images/person.png">
                         <div fxLayout="column" fxLayoutGap="2px">
@@ -309,9 +269,9 @@
                             <span class="body-1">veeti.steppanen@sample.com</span>
                         </div>
                     </div>
-                </mat-card>
+                </div>
 
-                <mat-card class="responsible-person__card">
+                <div class="responsible-person__card">
                     <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="10px">
                         <img class="responsible-person__img" src="assets/images/person.png">
                         <div fxLayout="column" fxLayoutGap="2px">
@@ -320,8 +280,8 @@
                             <span class="body-1">max.musterman@sample.com</span>
                         </div>
                     </div>
-                </mat-card>
+                </div>
             </div>
-        </mat-card>
+        </div>
     </div>
 </div>
