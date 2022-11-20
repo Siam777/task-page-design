@@ -12,6 +12,18 @@ import { ConsolidationHubService } from '../services/consolidation-hub.service';
 export class ConsolidationHubPageComponent implements OnInit {
 
   confirmationOfTruck$!: Subscription;
+  storageData = [
+    { organization: "BG Ingenieurs Conselis AG", zone: 'BG Ingenieurs Conselis AG', row: '05', pitch: 10 },
+    { organization: "Conselis AG", zone: 'Conselis AG', row: '05', pitch: 10 },
+    { organization: "Conselis A BG Ingenieurs", zone: 'Conselis A BG Ingenieurs', row: '05', pitch: 10 },
+    { organization: "BG Ingenieurs Conselis AG", zone: 'BG Ingenieurs Conselis AG', row: '05', pitch: 10 },
+    { organization: "Conselis AG", zone: 'Conselis AG', row: '05', pitch: 10 },
+    { organization: "Conselis A BG Ingenieurs", zone: 'Conselis A BG Ingenieurs', row: '05', pitch: 10 },
+    { organization: "Conselis AG", zone: 'Conselis AG', row: '05', pitch: 10 }
+  ];
+
+  displayedColumns: string[] = ['organization', 'zone', 'row', 'pitch'];
+  dataSource = this.storageData;
   constructor(public dialog: MatDialog, private consolidationHubService: ConsolidationHubService) { }
 
   ngOnInit(): void {
@@ -23,7 +35,8 @@ export class ConsolidationHubPageComponent implements OnInit {
       quantity: "08",
       cardClasses: {
         "truck-info__normal": true,
-        "p-24": true
+        "p-24": true,
+        "mb-10": true
       },
       iconClasses: {
         "fa-solid": true,
@@ -38,7 +51,8 @@ export class ConsolidationHubPageComponent implements OnInit {
       quantity: 12,
       cardClasses: {
         "truck-info__selected": true,
-        "p-24": true
+        "p-24": true,
+        "mb-10": true
       },
       iconClasses: {
         "fa-solid": true,
@@ -53,7 +67,8 @@ export class ConsolidationHubPageComponent implements OnInit {
       quantity: 16,
       cardClasses: {
         "truck-info__normal": true,
-        "p-24": true
+        "p-24": true,
+        "mb-10": true
       },
       iconClasses: {
         "fa-solid": true,
@@ -72,7 +87,8 @@ export class ConsolidationHubPageComponent implements OnInit {
         quantity: "12",
         cardClasses: {
           "truck-info__normal": true,
-          "p-24": true
+          "p-24": true,
+          "mb-10": true
         },
         iconClasses: {
           "fa-solid": true,
@@ -80,7 +96,7 @@ export class ConsolidationHubPageComponent implements OnInit {
           "fa-truck_sm": true,
           "fa-truck_color-normal": true
         },
-        isSelected: false
+        isSelected: false,
       },
 
     )
@@ -92,11 +108,11 @@ export class ConsolidationHubPageComponent implements OnInit {
 
   getTruckConfirmation() {
     this.confirmationOfTruck$ = this.consolidationHubService.getConfirmationOfAddingTruck()
-                                .subscribe((res:boolean)=>{
-                                  if(res){
-                                    this.addTrucks();
-                                  }
-                                })
+      .subscribe((res: boolean) => {
+        if (res) {
+          this.addTrucks();
+        }
+      })
   }
 
 }

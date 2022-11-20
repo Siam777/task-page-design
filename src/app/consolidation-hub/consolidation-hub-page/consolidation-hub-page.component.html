@@ -2,9 +2,15 @@
     <div fxFlex="column" fxLayoutAlign="start start">
         <div class="address p-24" fxFlex="100">
             <div fxLayout="column" class="address-info">
-                <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="24px">
-                    <div fxLayout="row" fxFlex="60" fxLayoutAlign="start center" fxLayoutGap="24px">
-                        <div class="address-info__photo-container" fxFlex="400px">
+                <div fxLayout="row wrap" fxLayoutAlign.xl="start center" fxLayoutAlign.lg="start center"
+                    fxLayoutAlign.md="start center" fxLayoutAlign.sm="start start" fxLayoutAlign.xs="start start"
+                    fxLayoutGap="24px">
+                    <div fxLayout="row" fxFlex.xl="58" fxFlex.lg="58" fxFlex.md="55" fxFlex.sm="100" fxFlex.xs="100"
+                        fxLayoutAlign.xs="start center" fxLayoutAlign.lg="start center" fxLayoutAlign.md="start center"
+                        fxLayoutAlign.sm="start start" fxLayoutAlign.xs="start start" fxLayoutGap.xl="24px"
+                        fxLayoutGap.lg="24px" fxLayoutGap.md="24px" fxLayoutGap.sm="15px" fxLayoutGap.xs="15px">
+                        <div class="address-info__photo-container" fxFlex.xl="400px" fxFlex.lg="400px" fxFlex.md="300px"
+                            fxFlex.sm="150px" fxFlex.xs="100px">
                             <img class="address-info__photo-config" src="assets/images/selise-image.jpg">
                         </div>
                         <div fxLayout="column" class="address-info__details" fxFlex>
@@ -12,7 +18,8 @@
                                 BG Ingenieurs Conseils AG
                             </span>
                             <span class="address-info__subtitle">
-                                <i class="fa-sharp fa-solid fa-location-dot"></i> <span class="ml-8 body-1">Winterfeldweg
+                                <i class="fa-sharp fa-solid fa-location-dot"></i> <span
+                                    class="ml-8 body-1">Winterfeldweg
                                     52,
                                     3018 BernSwitzerland</span>
                             </span>
@@ -22,14 +29,17 @@
                             </span>
                         </div>
                     </div>
-                    <div fxFlex="40" fxLayoutAlign="end">
-                        <div class="address-info__map-container" fxFlex="450px" style="height: 240px;overflow: hidden;">
+                    <div fxFlex.xl="40" fxFlex.lg="40" fxFlex.md="40" fxFlex.sm="100" fxFlex.xs="100"
+                        fxLayoutAlign.xl="end" fxLayoutAlign.lg="end" fxLayoutAlign.md="end" fxLayoutAlign.sm="start"
+                        fxLayoutAlign.sm="start">
+                        <div class="address-info__map-container" fxFlex.xl="450px" fxFlex.lg="450px" fxFlex.md="350px"
+                            fxFlex.sm="100" fxFlex.xs="100">
                             <img class="address-info__map" src="assets/images/selise-address-map.png">
                         </div>
                     </div>
-                                  
+
                 </div>
-               
+
             </div>
 
         </div>
@@ -43,11 +53,12 @@
                 <div class="zone-schedule__title" fxLayoutAlign="start center">
                     <span class="mat-title">Unloading Zone Scheduling </span>
                 </div>
-                <div fxLayout="row" fxLayoutAlign="start stretch" fxLayoutGap="20">
-                    <div class="zone-schedule__selected-card" fxFlex="22">
+                <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxLayoutGap="20px">
+                    <div class="zone-schedule__selected-card mb-10" fxFlex.xl="22" fxFlex.lg="22" fxFlex.md="30"
+                        fxFlex.sm="42" fxFlex.xs="100">
                         <div>
                             <div fxLayout="row" class="zone-schedule__selected-content p-20"
-                                fxLayoutAlign="space-between start">
+                                fxLayoutAlign="space-between start" fxLayoutGap="10">
 
                                 <div fxLayout="column" fxFlex="100">
                                     <div fxLayout="column">
@@ -91,7 +102,8 @@
 
                     </div>
 
-                    <div class="zone-schedule__normal-card"  fxFlex="20">
+                    <div class="zone-schedule__normal-card mb-10" fxFlex.xl="22" fxFlex.lg="22" fxFlex.md="30" fxFlex.sm="42"
+                        fxFlex.xs="100">
                         <div fxLayout="row" class="zone-schedule__selected-content p-20"
                             fxLayoutAlign="space-between start">
 
@@ -125,7 +137,8 @@
                         </div>
                     </div>
 
-                    <div class="zone-schedule__add-card" fxFlex="20"  fxLayoutAlign="center center">
+                    <div class="zone-schedule__add-card mb-10" fxFlex.xl="22" fxFlex.lg="22" fxFlex.md="30" fxFlex.sm="42"
+                        fxFlex.xs="100" fxLayoutAlign="center center">
                         <div fxLayout="row" class="zone-schedule__add-content p-20">
                             <span class="color-olive mat-title">
                                 <i class="fa-solid fa-circle-plus"></i> ADD NEW
@@ -141,14 +154,15 @@
 
 <div class="width-100 mt-20">
     <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxLayoutGap="2px">
-        <div class="truck-info p-24" fxFlex="47">
+        <div class="truck-info p-24" fxFlex.xl="47" fxFlex.lg="47" fxFlex.md="47" fxFlex.sm="100" fxFlex.xs="100">
             <div class="truck-info__title" fxLayoutAlign="space-between center">
                 <span class="mat-title">Truck Information</span>
                 <mat-icon class="color-olive">more_vert</mat-icon>
             </div>
-            <div fxLayout="row wrap" fxLayoutGap="20px">
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxLayoutGap="20px">
                 <ng-container *ngFor="let truck of trucks">
-                    <div [ngClass]="truck.cardClasses" fxFlex="20">
+                    <div [ngClass]="truck.cardClasses" fxFlex.xl="20" fxFlex.lg="20" fxFlex.md="30" fxFlex.sm="40"
+                        fxFlex.xs="40">
                         <span *ngIf="truck.isSelected" fxLayoutAlign="end">
                             <i class="fa-solid fa-pen fa-pen_color-olive ml-8"></i>
                         </span>
@@ -161,22 +175,62 @@
                         </div>
                     </div>
                 </ng-container>
-                <div class="truck-info__add" fxFlex="20" fxLayoutAlign="center">
-                    <div fxLayout="column" class="truck-info__content" fxLayoutAlign="center center"
-                        fxLayoutGap="15px">                                             
-                            <i class="fa-solid fa-circle-plus fa-circle-plus_md fa-circle-plus_color-olive" style="display: block;" (click)="openDialog()"></i>
-                            <span class="mat-subheading-1 mat-subheading-1_bold color-olive" style="display: block;" (click)="addTrucks()">ADD NEW</span>                
+                <div class="truck-info__add mb-10 p-24" fxFlex.xl="20" fxFlex.lg="20" fxFlex.md="30" fxFlex.sm="40" fxFlex.xs="40"
+                    fxLayoutAlign="center">
+                    <div fxLayout="column" class="truck-info__content" fxLayoutAlign="center center" fxLayoutGap="15px">                       
+                        <i class="fa-solid fa-circle-plus fa-circle-plus_md fa-circle-plus_color-olive"
+                            style="display: block;" (click)="openDialog()"></i>
+                        <span class="mat-subheading-1 mat-subheading-1_bold color-olive" style="display: block;"
+                            (click)="addTrucks()">ADD NEW</span>
                     </div>
-                </div>               
+                </div>
             </div>
         </div>
-        <div class="storage-info p-24" fxFlex="47">
-            <div class="storage-info__title" fxLayoutAlign="space-between center">
-                <span class="mat-title">Storage Information</span>
-                <mat-icon class="color-olive">more_vert</mat-icon>
+        <div class="storage-info p-24" fxFlex.xl="47" fxFlex.lg="47" fxFlex.md="47" fxFlex.sm="100" fxFlex.xs="100">
+            <div fxLayout="column">
+                <div fxLayout="row" class="storage-info__title" fxFlex="100" fxLayoutAlign="space-between center">
+                    <span class="mat-title">Storage Information</span>
+                    <mat-icon class="color-olive">more_vert</mat-icon>
+                </div>
+                <div fxLayout="row">
+                    <div>
+
+                    </div>
+                    <table mat-table [dataSource]="dataSource">
+                        <ng-container matColumnDef="organization">
+                          <th mat-header-cell *matHeaderCellDef class="mat-title"> Organization </th>
+                          <td mat-cell class="color-olive" *matCellDef="let element"> {{element.organization}} </td>
+                        </ng-container>
+                                    
+                        <ng-container matColumnDef="zone">
+                          <th mat-header-cell *matHeaderCellDef class="mat-title"> Zone </th>
+                          <td mat-cell *matCellDef="let element"> {{element.zone}} </td>
+                        </ng-container>
+                                     
+                        <ng-container matColumnDef="row">
+                          <th mat-header-cell *matHeaderCellDef class="mat-title"> Row </th>
+                          <td mat-cell *matCellDef="let element"> {{element.row}} </td>
+                        </ng-container>
+                                     
+                        <ng-container matColumnDef="pitch">
+                          <th mat-header-cell *matHeaderCellDef class="mat-title"> Pitch </th>
+                          <td mat-cell *matCellDef="let element"> {{element.pitch}} </td>
+                        </ng-container>
+                      
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                      </table>
+                </div>
+    
             </div>
-            <div fxLayout="row wrap" fxLayoutAlign="stretch" fxLayoutGap="15">
-                <div class="storage-info__add" fxFlex="22">
+
+           
+            
+          
+              
+            <!-- <div fxLayout="row wrap" fxLayoutAlign="stretch" fxLayoutGap="15">
+                <div class="storage-info__add" fxFlex.xl="22" fxFlex.lg="22" fxFlex.md="30" fxFlex.sm="40"
+                    fxFlex.xs="40">
                     <div fxLayout="column" class="truck-info__content" fxLayoutAlign="space-between center"
                         fxLayoutGap="15px">
                         <span></span>
@@ -188,9 +242,10 @@
                     <span class="mat-subheading-2 mat-subheading-2_font-message">Storage information is not added
                         yet!</span>
                 </div>
-            </div>
+            </div> -->
+
         </div>
-        <div class="document p-24" fxFlex="47">
+        <div class="document p-24" fxFlex.xl="47" fxFlex.lg="47" fxFlex.md="47" fxFlex.sm="100" fxFlex.xs="100">
             <div class="document__title" fxLayoutAlign="start center">
                 <span class="mat-title">Documents</span>
             </div>
@@ -219,8 +274,8 @@
                 </div>
             </div>
         </div>
-        
-        <div class="photo p-24" fxFlex="47">
+
+        <div class="photo p-24" fxFlex.xl="47" fxFlex.lg="47" fxFlex.md="47" fxFlex.sm="100" fxFlex.xs="100">
             <div class="photo__title" fxLayoutAlign="start center">
                 <span class="mat-title">Photos</span>
             </div>
@@ -248,8 +303,10 @@
             <div class="responsible-person__title" fxLayoutAlign="start center">
                 <span class="mat-title">Responsible Person</span>
             </div>
-            <div fxLayout="row wrap" class="responsible-person__container" fxLayoutAlign="start start" fxLayoutGap="20px">
-                <div class="responsible-person__card">
+            <div fxLayout.xl="row wrap" fxLayout.lg="row wrap" fxLayout.md="row wrap" fxLayout.sm="column"
+                fxLayout.xs="column" class="responsible-person__container" fxLayoutAlign="start start"
+                fxLayoutGap="40px">
+                <div class="responsible-person__card p-24">
                     <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="10px">
                         <img class="responsible-person__img" src="assets/images/person.png">
                         <div fxLayout="column" fxLayoutGap="2px">
@@ -260,7 +317,7 @@
                     </div>
                 </div>
 
-                <div class="responsible-person__card">
+                <div class="responsible-person__card p-24">
                     <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="10px">
                         <img class="responsible-person__img" src="assets/images/person.png">
                         <div fxLayout="column" fxLayoutGap="2px">
@@ -271,7 +328,7 @@
                     </div>
                 </div>
 
-                <div class="responsible-person__card">
+                <div class="responsible-person__card p-24">
                     <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="10px">
                         <img class="responsible-person__img" src="assets/images/person.png">
                         <div fxLayout="column" fxLayoutGap="2px">

@@ -23,10 +23,10 @@
         //height: 180px;
     }
 
-    // &__map-container {
-    //     width: 30%;
-    //     height: 200px;
-    // }
+    &__map-container {
+        height: 240px;
+        overflow: hidden
+    }
 
     // &__edit {
     //     margin-top: 2%;
@@ -251,6 +251,7 @@ mat-card {
     padding: 2px 2px 2px 2px;
     margin: 1% 2%;
     border-radius: 10px;
+
     &__info {
         // height: 200px;
         // width: 100%;
@@ -292,6 +293,7 @@ mat-card {
     padding: 2px 2px 2px 2px;
     margin: 1% 2%;
     border-radius: 10px;
+
     &__container {
         // height: 200px;
         // width: 100%;
@@ -299,12 +301,12 @@ mat-card {
 
     &__img-config {
         // width: 100px;
-        height: 80px;
+        //height: 80px;
     }
 
     &__card {
         // width: 100px;
-        // height: 80px;
+        height: 80px;
         // margin: 0;
     }
 
@@ -328,6 +330,7 @@ mat-card {
     padding: 2px 2px 2px 2px;
     margin: 1% 2%;
     border-radius: 10px;
+
     &__container {
         // height: 150px;
         // width: 100%;
@@ -373,4 +376,26 @@ mat-card {
     &_light {
         color: grey;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .mat-headline {
+        font-size: 14px
+    }
+
+    .address-info {
+        &__map-container {
+            height: 100px;
+            overflow: hidden
+        }
+    }
+
+    .table-sm{
+        width: 800px;
+        overflow: auto;
+    }
+}
+
+::ng-deep .mat-elevation-z8 {
+    box-shadow: none;
 }
